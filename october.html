@@ -1,0 +1,77 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" ; />
+        <title>Haripriaya Nagarajoo | Logbook Website</title>
+        <link rel="stylesheet" href="./style.css"/>
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo"><span>H</span>aripriaya.</div>
+            <ul class="navlist">
+                <li><a href="index.html">About</a></li>
+                <li><a href="mylogbook.html">Logbook</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </header>
+
+        <body>
+            <section id="october" class="october">
+                <div class="main-text">
+                    <h2>October's Log</h2>
+                </div>
+            
+                <section class="log-box">
+                    <div class="oct-log-box">
+                        <div class="oct-date-container">
+                            <div class="octgrid-item" itemid="1" onclick="showModal('modal1')">
+                                <h4>2nd Oct 23</h4>
+                            </div>
+                            <div class="octgrid-item" itemid="2" onclick="showModal('modal2')">
+                                <h4>3rd Oct 23</h4>
+                            </div>
+                            <div class="octgrid-item" itemid="3" onclick="showModal('modal3')">
+                                <h4>4th Oct 23</h4>
+                            </div>
+        
+
+                            <div class="modal" id="modal1">
+                                <div class="modal-content">
+                                    <span class="close-button" onclick="closeModal('modal1')">&times;</span>
+                                    <p>On 2nd October 2023, I began my day by participating in a meeting organized by my supervisor, which included my colleagues Yi Ying and Zain. The purpose of this meeting was to conduct a comprehensive review of the current project assigned to our team. Moreover, I had gained knowledge on Workflows in mendix application. Workflows in Mendix were fundamental components that enabled the automation of business processes and the orchestration of various tasks within Mendix applications. These workflows served as a structured way to model, design, and implement business processes, ensuring that activities were executed in a coordinated and efficient manner. To create workflows, it was necessary to utilize the Mendix Studio Pro, where they could visually design workflows using a user-friendly drag-and-drop interface. Workflows were visualized as a sequence of activities, with the capability to define the logic, conditions, and transitions that governed the flow between these activities. This visual approach made it easier to model complex business processes and to ensure that tasks were carried out in the desired sequence. Workflows were instrumental in automating tasks and processes. I could specify actions within the workflow activities, such as sending notifications, updating data, or triggering microflows. This automation significantly reduced the need for manual intervention, enhancing the overall efficiency and consistency of business processes. Additionally, workflows seamlessly integrated with external systems and services through connectors, enabling Mendix applications to interact with a wide range of external resources. Workflows played a pivotal role in managing the states of entities. Entities could be configured with distinct statuses, and workflows were employed to move these entities between states contingent on precise conditions or triggers. This state management approach was invaluable for tracking the progress of entities through various stages of a process, offering transparency and control over the application's data. Workflows also supported error handling and exception handling mechanisms. I could configure how the workflow should respond when errors or exceptions occurred during execution. This ensured that workflows could gracefully handle unexpected situations, recover from errors, and continue processing without disruptions.</p>
+                                </div>
+                            </div>
+
+                            <div class="modal" id="modal2">
+                                <div class="modal-content">
+                                    <span class="close-button" onclick="closeModal('modal2')">&times;</span>
+                                    <p>On 3rd October 2023, I started my day by participating in the weekly staff meeting, held in the Denali Meeting Room on Level 3, Zone A. During this meeting, I provided an overview of the progress achieved in the prior week. Today's learning focus centered on Web Actions. Web Actions offered a set of powerful tools to enhance user interactions within your applications. These included "Focus next" and "Focus previous" actions, which streamlined keyboard navigation by moving focus between elements in a user-friendly way. The "Scroll to" action enabled precise control over the user's view, allowing you to scroll to a specific element on a page using selectors like class names, HTML elements, or element IDs. "Set focus" let you programmatically set focus on elements like buttons or inputs for a smoother user experience. Additionally, the "Take picture" action was a standout feature that empowered users to capture photos using both front and back cameras in web or Progressive Web Apps (PWAs), offering seamless integration of camera functionality into your Mendix application. These Web Actions collectively contributed to a more dynamic and engaging user interface.</p>
+                                </div>
+                            </div>
+
+                            <div class="modal" id="modal3">
+                                <div class="modal-content">
+                                    <span class="close-button" onclick="closeModal('modal3')">&times;</span>
+                                    <p>On 4th October 2023, I delved into the concept of Nanoflows in Mendix applications. A nanoflow in Mendix was a lightweight, client-side microflow used for performing actions within Mendix web and mobile applications. Unlike traditional microflows, nanoflows were executed on the client side, which meant they did not require a server round-trip for execution, making them faster and more efficient for tasks that could be handled on the client. Nanoflows were particularly useful for performing actions such as data validation, user interface updates, and calculations without the need to involve the server. They were designed to enhance the user experience by reducing the latency associated with server calls. Nanoflows could be triggered by events like button clicks or other client-side interactions and could interact with client-side data and widgets. This feature contributed to the overall performance and responsiveness of Mendix applications, making them more user-friendly and efficient.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <footer>
+                <div class="footer-content">
+                    <p>&copy; 2023 Haripriaya Nagarajoo. All rights reserved.</p>
+                </div>
+            </footer>
+
+            
+            <script src="script.js"></script>
+        </body>
+            
+</html>

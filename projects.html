@@ -1,0 +1,94 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" ; />
+        <title>Haripriaya Nagarajoo | Logbook Website</title>
+        <link rel="stylesheet" href="./style.css" />
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+
+        </html>
+
+<body>
+    <header>
+        <div class="logo"><span>H</span>aripriaya.</div>
+        <ul class="navlist">
+            <li><a href="index.html">About</a></li>
+            <li><a href="mylogbook.html">Logbook</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </header>
+
+    <section id="project" class="project">
+        <div class="main-text">
+            <h1>My Projects</h1>
+        </div>
+
+        <section class="project-box">
+            <div class="projects-box">
+                <div class="project-grid">
+                    <div class="projectgrid-item" itemid="1" onclick="showModal('modal1')">
+                        <h4>Digi Voice Solution FAQs Website using Microsoft SharePoint</h4>
+                        <img src="./Images/FAQ.png" alt="">
+                    </div>
+
+                    <div class="projectgrid-item" itemid="2" onclick="showModal('modal2')">
+                        <h4>Donation and Scrap Flow Approval using Microsoft Power Automate</h4>
+                        <img src="./Images/Microsoft Power Automate.png" alt="">
+                    </div>
+
+                    <div class="projectgrid-item" itemid="3" onclick="showModal('modal3')">
+                        <h4>Improve IT Support Site in Microsoft SharePoint</h4>
+                        <img src="./Images/Microsoft_Office_SharePoint_(2019–present).svg.png" alt="">
+                    </div>
+
+                    <div class="modal" id="modal1">
+                        <div class="modal-content">
+                            <span class="close-button" onclick="closeModal('modal1')">&times;</span>
+                            <p>As part of my academic curriculum and in fulfillment of the industrial training requirement mandated by my university, I am poised to embark on a project of considerable significance. For this project, I draw inspiration from a significant technological transformation undertaken by Jabil Sdn. Bhd, where the goal was to transition employees from Zoom softphones to Digi Phones. The challenge was to guide users through this transition seamlessly, and the solution came in the form of a meticulously designed Frequently Asked Questions (FAQs) website hosted on Microsoft SharePoint.<br>
+                                <br>The primary objective of this project was to develop a comprehensive FAQs website that could serve as an invaluable resource for all employees undergoing the transition. The website aimed to empower users with clear instructions, step-by-step guides, and answers to frequently asked questions, thus reducing the workload of the Site IT Support Team while ensuring a smooth and successful transition for all users.<br>                                
+                                <br>One of the critical issues addressed in this project was the lack of clear and accessible guidance on requesting Digi Phones through ServiceNow. This led to confusion and hesitation among users, potentially overwhelming the IT Support Team with support requests. The FAQs website not only simplified the transition process but also boosted employee confidence and reduced their reliance on IT support for routine inquiries.<br>                                
+                                <br>The project scope covered a wide range of topics, including guides on requesting Digi Phones, phone and line management, warranty coverage, troubleshooting, transition timelines, common issues, and frequently asked questions. Contact information for IT support and relevant personnel was readily available for those needing assistance during the transition.<br>                                
+                                <br>The significance of this project extended beyond just a website; it streamlined operations, enhanced user experiences, and allowed the IT Support Team to focus on more strategic initiatives. It ensured that users had access to consistent and accurate information throughout the transition process, preventing frustration, resistance to change, and potential productivity losses.<br>                                
+                                <br>The project followed a structured methodology, from analysis to implementation and management, ensuring that it remained user-centric and efficient. It also addressed common weaknesses associated with platforms like SharePoint and provided recommendations for overcoming them.<br>                                
+                                <br>In conclusion, this project serves as an excellent example of how technology and user-centric design can come together to facilitate a significant organizational change. It not only met university requirements for industrial training but also made a substantial impact on the operations and user satisfaction of Jabil Sdn. Bhd.</p>
+                        </div>
+                    </div>
+
+                    <div class="modal" id="modal2">
+                        <div class="modal-content">
+                            <span class="close-button" onclick="closeModal('modal2')">&times;</span>
+                            <p>In collaboration with my intern colleague, we undertook a project to streamline and automate the approval processes for two different approvals within our organization which are donation and scrap approvals. These approvals were managed by different departments, specifically the IT and Facility departments. To facilitate this automation, we created two separate forms, one for donations and the other for scrap requests. The key objective was to trigger form submissions automatically for the respective approvers using Microsoft Power Automate.<br>
+                                <br>For the Donation Flow, the process commenced when HR submitted the Donation Form. This action triggered a multi-layered approval process. Upon HR's submission, the initial layer of approval was triggered. Depending on the nature of the request whether it was related to IT or Facility and the form was directed accordingly, ensuring that the appropriate team had prompt visibility. The reviewing department assessed the form, provided the item list, and clicked “Approve” after attaching it. Subsequently, the flow prompted the Fixed Asset (FA) to validate the item list's accuracy. After successful validation by FA, the HR representative was reintegrated into the process, tasked with either providing an estimate or confirming the collection date for scrap or donation requests and followed by clicking “Approve”. The process then required approvals from the heads of the IT and Finance departments, all efficiently managed by Power Automate to secure the necessary authorizations without delays. HR's final responsibility was to update the collection date once the requests has been approved by department heads. In the closing stages, the FA department attached the Outgoing Pass (OGP) documentation to the Donation Form and clicked “Approve”. To maintain transparency and comprehensive record-keeping, an email containing approval logs was dispatched upon the successful completion of all approval layers.<br>
+                                <br>For the Scrap Flow, requests were initiated by either the IT or Facility department using the Scrap Form. The flow seamlessly guided the request through various layers of approval. The process commenced with Fixed Asset (FA) Approval, where FA's approval was sought and required to click “Approve”. Following FA's approval, the workflow triggered approvals from the heads of the IT and Finance departments, each of which was mandated to click “Approve” to proceed to the subsequent approval level. Subsequently, the workflow triggered the MRO to arrange for a Vendor Site Visit, followed by a necessary “Approve” action upon completion. The process then involved determining whether the disposal should be categorized as sales or cost. If designated as Sales Disposal, MRO was responsible for attaching the quotation in SharePoint and clicking “Approve”. Then, the Accounts Receivable/Expense Analyst (AR/EA) approval was required, including the attachment of invoices in SharePoint and the “Approve” action. MRO was then prompted to upload receipts, indicating submission by selecting “Approve”. For Cost Disposal, the requestor was responsible for submitting a Coupa requisition to process the scrap request. For the level approval in both Sales and Cost Disposal cases, MRO was also required to provide the scrap collection date in SharePoint. Once scrap collection was confirmed, the requestor had to validate all information to ensure the Outgoing Goods Pass form was complete, the delivery date was entered into the tracking system, and then click “Approve”. Finally, FA Closing was responsible for verifying the form and completing the necessary scrap entry postings in SAP, culminating with a click of  “Approve”. As with the Donation Flow, an email containing comprehensive approval logs was sent upon the successful completion of all layers of approval. This meticulous automation of both donation and scrap approval workflows ensured efficiency, transparency, and compliance within our organization.<br>
+                                </p>
+                        </div>
+                    </div>
+
+                    <div class="modal" id="modal3">
+                        <div class="modal-content">
+                            <span class="close-button" onclick="closeModal('modal3')">&times;</span>
+                            <p>I was entrusted with the task of improving the Site IT support's SharePoint site, a responsibility that provided me with a hands-on opportunity to enhance the digital workspace and user experience. The improvements spanned across various sections of the site, aimed at optimizing its functionality and visual appeal.<br>
+                                <br>Beginning with the home page, I initiated several enhancements to make it more informative and user-friendly. Firstly, I incorporated an announcement section, ensuring that important updates and news could be prominently displayed for easy access by site users. Additionally, I integrated a selection of self-help resources, empowering users with quick access to valuable information, guides, and troubleshooting materials. To enhance navigation, I added a collection of quick menus and links directly on the home page, simplifying the process of reaching commonly visited areas within the site. Moreover, I undertook the task of creating a new organizational chart, improving the site's visual representation of its structure and hierarchy. To infuse a fresh and engaging look, I applied a theme change, revitalizing the overall aesthetics of the page.<br>
+                                <br>In the "Products and Services" section, I orchestrated a strategic revamp. I introduced four distinct menus, each tailored to specific functionalities which are PES Facility Ticket, Invoice List, Scrap Approval, and Donation Approval. These menus were thoughtfully designed, featuring buttons and images that not only provided easy access but also added a visual dimension to the section, making navigation more intuitive and appealing.<br>
+                                <br>The "FAQs" section underwent a comprehensive transformation as well. I categorized the frequently asked questions into three main menus on the primary FAQs page: General FAQ, Zoom FAQs, and Digi Voice Solution FAQs. This reorganization facilitated efficient access to relevant information, streamlining the user experience and ensuring that users could quickly find answers to their queries.<br>
+                                <br>A consistent enhancement across all pages was the addition of a footer. This seemingly minor yet essential addition provided a standardized layout and enriched the user interface. It contained vital information about the Site IT Support IT Team, including names and contact details. This addition ensured that users could easily identify and reach out to the appropriate IT team member for assistance or inquiries, contributing to a smoother and more responsive support process.<br>
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Haripriaya Nagarajoo. All rights reserved.</p>
+        </div>
+    </footer>
+
+        <script src="script.js"></script>
+    </body>
+  </html>
